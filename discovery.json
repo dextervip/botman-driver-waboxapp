@@ -1,0 +1,8 @@
+{
+    "botman/driver-config": [
+        "stubs/waboxapp.php"
+    ],
+    "botman/driver": [
+        "BotMan\\Drivers\\Waboxapp\\WaboxappDriver"
+    ]
+}

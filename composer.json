@@ -1,0 +1,49 @@
+{
+    "name": "dextervip/botman-driver-waboxapp",
+    "license": "MIT",
+    "description": "waboxapp driver for BotMan",
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "Waboxapp"
+    ],
+    "homepage": "http://github.com/dextervip/botman-driver-waboxapp",
+    "authors": [
+        {
+            "name": "Rafael Amorim",
+            "email": "email@rafaelamorim.me"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "botman/botman": "~2.0"
+    },
+    "require-dev": {
+        "botman/studio-addons": "~1.0",
+        "illuminate/contracts": "~5.5.0",
+        "phpunit/phpunit": "~5.0",
+        "mockery/mockery": "dev-master",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BotMan\\Drivers\\Waboxapp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "cs": "php-cs-fixer fix"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BotMan\\Drivers\\Waboxapp\\Providers\\WaboxappServiceProvider"
+            ]
+        }
+    }
+}
